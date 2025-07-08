@@ -522,3 +522,21 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.gu
 2025-07-07 19:36:17,378 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-07-07 19:36:17,384 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-07-07 19:36:17,386 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\notifications\src\test\resources
+2025-07-07 19:40:08,884 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-07 19:40:08,891 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-07 19:40:08,892 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\environmental-analyzer\src\test\resources
+2025-07-07 19:40:08,924 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-07 19:40:08,929 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-07 19:40:08,944 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\notifications\src\test\resources
+2025-07-07 19:40:51,666 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-07 19:40:51,670 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-07 19:40:51,671 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\environmental-analyzer\src\test\resources
+2025-07-07 19:47:33,809 [Worker-243: Launching notifications - NotificationsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-07 19:47:33,822 [Worker-243: Launching notifications - NotificationsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-07 19:47:33,824 [Worker-243: Launching notifications - NotificationsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\notifications\src\test\resources
+2025-07-07 19:48:44,519 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-07 19:48:44,521 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-07 19:48:44,522 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\environmental-analyzer\src\test\resources
+2025-07-07 19:48:44,555 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-07 19:48:44,557 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-07 19:48:44,558 [Worker-170: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P2\examen\notifications\src\test\resources

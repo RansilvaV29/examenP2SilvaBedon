@@ -12,7 +12,8 @@
 	
 	<modules>
 		<module>sensor-reading</module>
-		<module>enviromentalAnalyzer</module>
+		<module>environmental-analyzer</module>
+		<module>notifications</module>
 		<!-- <module>ms-notificaciones</module>
 		<module>ms-publicaciones</module>
 		<module>sincronizacion</module>

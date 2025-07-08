@@ -19,7 +19,6 @@ INDEX VERSION 1.134+C:\Users\raul2\OneDrive\Escritorio\7o Semestre\distrbuidas\P
 4108712771.index
 3239920738.index
 635433288.index
-2888791184.index
 217806902.index
 4065540631.index
 468790404.index
