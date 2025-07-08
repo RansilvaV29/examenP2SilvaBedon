@@ -1,18 +1,19 @@
 from locust import HttpUser, task, between
-import json
+import random
 from datetime import datetime
 
-class SensorUser(HttpUser):
-    wait_time = between(1, 3)  # Espera entre peticiones para simular usuarios reales
+class MyUser(HttpUser):
+    host = "http://192.168.100.28:8000/api/conjunta/p2"
+    wait_time = between(0.5, 1.5)
 
     @task
     def enviar_dato_sensor(self):
         payload = {
             "sensorId": "SENSOR_01",
             "type": "temperature",
-            "value": 20,
+            "value": random.randint(1,60),
             "timestamp": datetime.utcnow().isoformat() + "Z"  # Fecha dinámica
         }
 
-        headers = {"Content-Type": "application/json"}
-        self.client.post("/sensor-readings", data=json.dumps(payload), headers=headers)
+        self.client.post("/sensor-readings", json=payload)
+

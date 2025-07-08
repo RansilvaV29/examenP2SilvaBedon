@@ -19,10 +19,60 @@ public class Notificacionservice {
 	public void guardarNotificacion(NotificationDto dto) {
 		Notification notificacion = new Notification();
 		notificacion.setNotificationId(dto.getNotificationId());
-		notificacion.setEventType(dto.getEventType());
+		//notificacion.setEventType(dto.getEventType());
 		notificacion.setRecipient(dto.getRecipient());
-		notificacion.setStatus(dto.getStatus());
+		//notificacion.setStatus(dto.getStatus());
 		notificacion.setTimestamp(dto.getTimestamp());
+		
+		String tipoOriginal = dto.getEventType();
+		switch (tipoOriginal) {
+		case "HighTemperatureAlert": {
+			
+			notificacion.setEventType("alerta de temperatura alta");
+			notificacion.setStatus("CRITICAL");
+			break;
+		}
+		case "temperatureNormal": {
+			
+			notificacion.setEventType("monitoreo de temperatura normal");
+			notificacion.setStatus("NORMAL");
+			break;
+		}
+		case "LowHumidityAlert": {
+			
+			notificacion.setEventType("alerta de humedad baja");
+			notificacion.setStatus("CRITICAL");			
+			break;
+		}
+		case "normalHumidity": {
+			
+			notificacion.setEventType("monitoreo de humedad normal");
+			notificacion.setStatus("NORMAL");
+
+			break;
+		}
+		case "SeismicActivityAlert": {
+			
+			notificacion.setEventType("alerta de sismo");
+			notificacion.setStatus("CRITICAL");
+
+			break;
+		}
+		case "normalSeismic": {
+			
+			notificacion.setEventType("monitoreo de movimiento tectonico normal");
+			notificacion.setStatus("NORMAL");
+
+			break;
+		}
+		default:
+			notificacion.setEventType(dto.getEventType()); // No se detecta alerta
+		    notificacion.setStatus("PENDING"); // o cualquier valor por defecto válido
+			break;		
+		}
+
+		
+		
 
 		notificacionRepository.save(notificacion);
 		System.out.println("Guardando notificación: " + notificacion.getNotificationId());

@@ -1,5 +1,0 @@
-package espe.edu.ec.sensor_reading.dto;
-
-public class SensorAnalizerDto {
-
-}
