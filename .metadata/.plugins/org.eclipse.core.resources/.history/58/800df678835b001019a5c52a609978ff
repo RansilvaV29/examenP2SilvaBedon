@@ -1,0 +1,5 @@
+package espe.edu.ec.sensor_reading;
+
+public class RabbitMQConfiguration {
+
+}

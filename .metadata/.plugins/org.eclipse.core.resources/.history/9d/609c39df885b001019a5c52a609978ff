@@ -1,0 +1,34 @@
+package com.example.demo.service;
+
+import java.io.Console;
+
+import org.apache.catalina.connector.Response;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.dto.ResponseDto;
+import com.example.demo.dto.SensorAnalizerDto;
+import com.example.demo.entity.SensorAnalizer;
+import com.example.demo.repository.SensorAnalizerRepository;
+
+@Service
+public class SensorAnalizerService {
+
+	
+	@Autowired
+	private SensorAnalizerRepository analizerRepository;
+	
+	public void ejecutarAnalisis(SensorAnalizerDto dto) {
+		SensorAnalizer analizer = new SensorAnalizer();
+		analizer.setAlertaId(dto.getAlertaId());
+		analizer.setSensorId(dto.getSensorId());
+		analizer.setType(dto.getType());
+		analizer.setValue(dto.getValue());
+		analizer.setTimestamp(dto.getTimestamp());
+		analizer.setTreshold(dto.getTreshold());
+		
+		SensorAnalizer nuevo = analizerRepository.save(analizer);
+		
+		//return new ResponseDto("Datos recibidos y analizados", analizer);
+	}
+}

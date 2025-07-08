@@ -1,0 +1,23 @@
+package espe.edu.ec.sensor_reading.dto;
+
+import java.time.ZonedDateTime;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class NewSensorReadingEvent {
+
+    private String sensorId;
+    private String type;
+    private Double value;
+    private ZonedDateTime timestamp;
+
+    public NewSensorReadingEvent(String sensorId, String type, Double value, ZonedDateTime timestamp) {
+        this.sensorId = sensorId;
+        this.type = type;
+        this.value = value;
+        this.timestamp = timestamp;
+    }
+}
